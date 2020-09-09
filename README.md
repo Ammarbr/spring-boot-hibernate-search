@@ -1,3 +1,5 @@
+source: https://github.com/cristianprofile/spring-boot-hibernate-search.git
+
 # spring-boot-hibernate-search
 Spring Boot with hibernate search (lucene capabilities)
 
