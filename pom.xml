@@ -29,6 +29,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+
+        <!-- Thanks for using https://jar-download.com -->
+
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-search-engine -->
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -45,6 +48,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/‌​spring-boot-starter-‌​web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <!-- Edited to remove versioning and let Spring Boot Starter do it>
+            <version>1.5.3.RELEASE</version -->
+        </dependency>
+
+
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-search-orm -->
         <dependency>
@@ -85,6 +97,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

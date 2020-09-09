@@ -22,20 +22,26 @@ public class CardServiceImpl implements CardService {
         cardrepository.save(card);
 
         card=new Card();
+        card.setHolderName("Puma Silberlöwe");
+        card.setHolderSurname("Romero");
+        card.setExpiration("12/08/2017");
+
+        cardrepository.save(card);
+
+        card=new Card();
         card.setHolderName("Bob Gibson");
         card.setHolderSurname("Alonso");
         card.setExpiration("12/08/2019");
 
         cardrepository.save(card);
 
-        card=new Card();
 
         card=new Card();
         card.setHolderName("Carlos Mathaus");
         card.setHolderSurname("Mathaus");
         card.setExpiration("12/08/2019");
 
-        card=new Card();
+
 
         card=new Card();
         card.setHolderName("Carlos Angular");

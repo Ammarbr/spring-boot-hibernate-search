@@ -39,7 +39,7 @@ public class HibernateSearchServiceImpl implements HibernateSearchService  {
     }
 
 
-    @Transactional
+    @Transactional(readOnly = true)
     @Override
     public List<Card> magicSearch(String searchTerm) {
 
